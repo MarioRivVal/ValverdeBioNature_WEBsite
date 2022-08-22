@@ -26,6 +26,10 @@ body {
   align-items: center;
   border: 5px solid #0f460f;
 }
+/*modificas con bootstrap*/
+.carousel {
+  margin: 100px;
+}
 /**menu paginas externas**/
 .main-pages {
   background-color: #0f460f;
@@ -81,7 +85,7 @@ ul {
   flex-wrap: wrap;
 }
 .card {
-  background-color: #0f460f;
+  /* background-color: #0f460f; */
   border-radius: 30px;
   overflow: hidden;
   border: solid 3px #0f460f;
@@ -168,23 +172,23 @@ ul {
   background-color: #fff;
   border-radius: 30px;
   display: flex;
-  gap: 50px;
 }
 .pies {
-  font-size: 30px;
+  font-size: 20px;
   width: 100%;
 }
 .lista-nav2 {
   text-align: end;
 }
-/*CSS de CONCURSO_FOTOGRAFIA*/
+/* CSS GALERIA FOTOS */
 .verano {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
 .ganadores_verano {
   background-color: #fff;
-  padding: 50px;
+  padding: 10px;
   border-radius: 50px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -194,16 +198,16 @@ ul {
     "foto_ganador1 foto_ganador1 foto_ganador1 foto_ganador1"
     "foto_ganador2 foto_ganador2 foto_ganador3 foto_ganador3"
     "foto_ganador2 foto_ganador2 foto_ganador3 foto_ganador3";
-  width: 1200px;
-  height: 1200px;
-  gap: 50px;
+  width: 800px;
+  height: 800px;
+  gap: 10px;
 }
 .fotos {
   background-position: center;
   background-size: cover;
   border-radius: 50px;
   font-size: 30px;
-  border: #0f460f 5px solid;
+  border: #0f460f 2px solid;
 }
 .nombre_ganador,
 .pais_ganador {
