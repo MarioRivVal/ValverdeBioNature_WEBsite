@@ -30,8 +30,7 @@ body {
 .carousel {
   margin: 100px;
 }
-/**menu paginas externas**/
-.main-pages {
+menu paginas externas .main-pages {
   background-color: #0f460f;
   display: flex;
   height: 60px;
@@ -229,6 +228,14 @@ ul {
 .foto_ganador3 {
   background-image: url(../img/rucola.jpg);
   grid-area: foto_ganador3;
+}
+/*HOJA FORM*/
+.acceso_form,
+.registracion_form {
+  margin: 100px;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
 }
 @media screen and (max-width: 480px) {
   .container_2 {

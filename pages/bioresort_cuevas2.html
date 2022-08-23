@@ -12,11 +12,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style_2.css" />
   </head>
   <body>
-    <section class="main-img">
-      <h1>Valverde BioNature</h1>
+    <section class="main-img main-img-bioresort">
+      <h1>Bio Resort Cuevas</h1>
     </section>
     <nav class="navbar bg-light" class>
       <div class="container-fluid">
@@ -39,12 +39,17 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                <a class="nav-link" href="../pages/bioresort_cuevas2.html"
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../pages/bioresort_cuevas2.html"
                   >BioResort Cuevas</a
                 >
                 <a class="nav-link" href="../pages/galeria_fotos.html"
                   >Galeria Fotos</a
+                >
+                <a class="nav-link" href="../pages/form.html"
+                  >Entra/Registrate</a
                 >
               </div>
             </div>
@@ -57,12 +62,45 @@
             placeholder="Busca"
             aria-label="Search"
           />
-          <button class="btn btn-outline-success" type="submit">Entra</button>
+          <button class="btn btn-outline-success" type="submit">Envia</button>
         </form>
       </div>
     </nav>
+    <!-- EN PROCESO
+      <form action="" class="box_reserva">
+      <h5>Reserva</h5>
+      <div>
+        <div>Entrada</div>
+        <input
+          type="date"
+          name="fecha"
+          min="2022-03-25"
+          max="2030-12-31"
+          step="2"
+        />
+      </div>
+      <div>
+        <div>Salida</div>
+        <input
+          type="date"
+          name="fecha"
+          min="2022-03-25"
+          max="2030-12-31"
+          step="2"
+        />
+      </div>
+      <select>
+        <option selected>N. Personas</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="3">4</option>
+        <option value="3">5</option>
+      </select>
+      <button>Reserva</button>
+    </form> -->
     <section class="resort">
-      <h3 class="titulo-resort">🌲BioResort Cuevas🌲</h3>
+      <h3 class="titulo-resort">🌲Tu Oasis en la Natura🌲</h3>
 
       <div
         id="carouselExampleIndicators"
@@ -123,23 +161,21 @@
       </div>
 
       <section class="card-resort">
-        <div class="pie-resort">
-          <p class="intro-resort">
-            Nuestro BioResort situado a una altura de 1200m, completamente
-            autosuficiente. Toda la fuente de agua es 100% agua de lluvias y
-            viene reciclada al infinito. Toda la electricidad es electrosolar. Y
-            todos los alimentos servidos en nuestro restaurante son
-            completamente biologicos y veganos. ¿Que esperas?
-          </p>
-          <button type="button" class="btn btn-success">Reserva Ya!</button>
-        </div>
+        <p class="intro-resort">
+          Nuestro BioResort situado a una altura de 1200m, completamente
+          autosuficiente. Toda la fuente de agua es 100% agua de lluvias y viene
+          reciclada al infinito. Toda la electricidad es electrosolar. Y todos
+          los alimentos servidos en nuestro restaurante son completamente
+          biologicos y veganos. ¿Que esperas?
+        </p>
       </section>
+      <button type="button" class="btn btn-success">Reserva Ya!</button>
     </section>
     <section class="seccion-pies">
       <footer class="pies">
         <nav class="lista-nav1">
           <ul>
-            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/index_2.html">Home</a></li>
             <li><a href="#">Partners</a></li>
             <li><a href="#">Nosotros</a></li>
           </ul>

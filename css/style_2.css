@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(207, 255, 209);
+  font-family: "Fjalla One", sans-serif;
+  margin: 0 auto;
+  margin: 10px;
+}
+/**imagen principal**/
+.main-img {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 85px;
+  color: #0f460f;
+  font-style: italic;
+  width: 100%;
+  height: 400px;
+  text-transform: uppercase;
+  background-image: url("../img/verduras-principal.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #0f460f;
+}
+/*HOJA BIORESORT*/
+.main-img-bioresort {
+  background-image: url(../img/hotel5.1.jpg);
+}
+/* EN PROCESO
+.box_reserva {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: 50px;
+  gap: 10px;
+} */
+.resort {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titulo-resort {
+  margin-top: 50px;
+}
+/*GALERIA BOOTSTRAP*/
+.carousel {
+  margin: 100px;
+  margin-top: 50px;
+}
+/* CSS GALERIA FOTOS */
+.verano {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.ganadores_verano {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "foto_ganador1 foto_ganador1 foto_ganador1 foto_ganador1"
+    "foto_ganador1 foto_ganador1 foto_ganador1 foto_ganador1"
+    "foto_ganador2 foto_ganador2 foto_ganador3 foto_ganador3"
+    "foto_ganador2 foto_ganador2 foto_ganador3 foto_ganador3";
+  width: 800px;
+  height: 800px;
+  gap: 10px;
+}
+.fotos {
+  background-position: center;
+  background-size: cover;
+  border-radius: 50px;
+  font-size: 30px;
+  border: #0f460f 2px solid;
+}
+.nombre_ganador,
+.pais_ganador {
+  background-color: rgba(255, 255, 255, 0.614);
+  color: #0f460f;
+  padding-left: 15px;
+}
+.nombre_ganador {
+  margin-top: 50px;
+}
+.foto_ganador1 {
+  background-image: url(../img/berenjena.jpg);
+  grid-area: foto_ganador1;
+}
+.foto_ganador2 {
+  background-image: url(../img/zanahoria.jpg);
+  grid-area: foto_ganador2;
+}
+.foto_ganador3 {
+  background-image: url(../img/rucola.jpg);
+  grid-area: foto_ganador3;
+}
+/*HOJA FORM BOOTSTRAP*/
+.acceso_form,
+.registracion_form {
+  margin: 100px;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+}
+/**foot**/
+.seccion-pies {
+  margin-top: 20px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 30px;
+  display: flex;
+}
+.pies {
+  font-size: 20px;
+  width: 100%;
+}
+.lista-nav2 {
+  text-align: end;
+}
+ul {
+  list-style: none;
+}
+@media (max-width: 768px) {
+  .main-img {
+    font-size: 40px;
+  }
+  .ganadores_verano {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr repeat(2, 2fr);
+    grid-template-areas:
+      "foto_ganador1"
+      "foto_ganador2"
+      "foto_ganador3";
+  }
+}
