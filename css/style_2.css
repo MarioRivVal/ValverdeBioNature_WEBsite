@@ -38,6 +38,7 @@ body {
   margin: 50px;
   gap: 10px;
 } */
+/* MODIFICACIONES GALERIA BOOTSTRAP*/
 .resort {
   display: flex;
   flex-direction: column;
@@ -46,10 +47,13 @@ body {
 .titulo-resort {
   margin-top: 50px;
 }
-/*GALERIA BOOTSTRAP*/
 .carousel {
   margin: 100px;
   margin-top: 50px;
+}
+.box_fotos_carousel {
+  border: solid #0f460f 5px;
+  border-radius: 10px;
 }
 /* CSS GALERIA FOTOS */
 .verano {
@@ -101,7 +105,7 @@ body {
   background-image: url(../img/rucola.jpg);
   grid-area: foto_ganador3;
 }
-/*HOJA FORM BOOTSTRAP*/
+/* MODIFICACIONES HOJA FORM BOOTSTRAP*/
 .acceso_form,
 .registracion_form {
   margin: 100px;
@@ -109,7 +113,29 @@ body {
   background-color: rgb(255, 255, 255);
   border-radius: 8px;
 }
-/**foot**/
+/*NOSOTROS*/
+.box_nosotros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 50px 100px;
+  row-gap: 100px;
+}
+.img_descripcion_nosotros {
+  display: flex;
+}
+.descripcion_nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+}
+.img_nosotros {
+  border: solid #0f460f 4px;
+}
+
+/*FOOT*/
 .seccion-pies {
   margin-top: 20px;
   padding: 30px;
@@ -128,9 +154,6 @@ ul {
   list-style: none;
 }
 @media (max-width: 768px) {
-  .main-img {
-    font-size: 40px;
-  }
   .ganadores_verano {
     grid-template-columns: 1fr;
     grid-template-rows: 3fr repeat(2, 2fr);
@@ -139,4 +162,10 @@ ul {
       "foto_ganador2"
       "foto_ganador3";
   }
+  .box_nosotros {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
 }
