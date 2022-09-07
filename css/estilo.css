@@ -1,27 +1,54 @@
-.titulo-filosofia {
-  margin: 30px; }
+.filosofia-one {
+  background-color: #4285f4; }
 
-.box-filosofia {
+.filosofia-two {
+  background-color: #a91414; }
+
+.filosofia-three {
+  background-color: #f3f30b; }
+
+.filosofia-four {
+  background-color: #ce22ce; }
+
+.box-futuro {
+  margin-right: 200px;
+  margin-left: 200px; }
+
+.titulo-futuro {
+  margin-bottom: 48px; }
+
+.titulo-filosofia, .titulo-futuro {
+  margin-top: 110px;
+  text-transform: uppercase;
+  font-size: 52px; }
+
+.box-filosofia, .box-futuro {
   display: flex;
   flex-direction: column;
   align-items: center; }
 
-.filosofias {
+.filosofias, .futuro {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   align-items: center;
   gap: 40px; }
-  .filosofias div {
+  .filosofias div, .futuro div {
     padding: 80px; }
-  .filosofias h4 {
+  .filosofias h4, .futuro h4 {
     font-size: 28px;
     text-decoration-line: underline;
     margin-bottom: 20px; }
-  .filosofias p {
+  .filosofias p, .futuro p {
     font-size: 20px; }
-  .filosofias .img-filosofia {
+  .filosofias .img-filosofia, .futuro .img-filosofia {
     grid-row: 1/3;
     grid-column: 1/3;
     padding: 80px;
-    padding-top: 0; }
+    padding-top: 0;
+    justify-self: center; }
+
+.futuro {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-bottom: 50px; }

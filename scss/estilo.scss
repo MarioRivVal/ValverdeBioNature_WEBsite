@@ -1,5 +1,37 @@
+@import "bg";
+@import "fonts";
+// map
+$filosofias: (
+  one: #4285f4,
+  two: #a91414,
+  three: #f3f30b,
+  four: #ce22ce,
+);
+@each $item, $color in $filosofias {
+  .filosofia-#{$item} {
+    background-color: $color;
+  }
+}
+//mixins
+@mixin espacio($derecha, $izquierda) {
+  margin-right: $derecha;
+  margin-left: $izquierda;
+}
+.box-futuro {
+  @include espacio(200px, 200px);
+}
+//extend
+.titulo-futuro {
+  @extend .titulo-filosofia;
+  margin-bottom: 48px;
+}
+.box-futuro {
+  @extend .box-filosofia;
+}
 .titulo-filosofia {
-  margin: 30px;
+  margin-top: 110px;
+  text-transform: uppercase;
+  font-size: 52px;
 }
 .box-filosofia {
   display: flex;
@@ -29,5 +61,12 @@
     grid-column: 1/3;
     padding: 80px;
     padding-top: 0;
+    justify-self: center;
   }
+}
+.futuro {
+  @extend .filosofias;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-bottom: 50px;
 }
